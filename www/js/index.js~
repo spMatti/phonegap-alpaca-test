@@ -45,25 +45,5 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-
-$("#form1").alpaca({
-    "schema": {
-      "title": "User Feedback",
-      "description": "What do you think about Alpaca?",
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "title": "Name"
-        },
-        "ranking": {
-          "type": "string",
-          "title": "Ranking",
-          "enum": ['excellent', 'not too shabby', 'alpaca built my hotrod']
-        }
-      }
-    }
-  });
-
     }
 };
